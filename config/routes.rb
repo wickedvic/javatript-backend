@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 #   namespace :v1 do
 #     resources :trips, only: [:show]
   resources :trips
+  resources :users
+  resources :posts
 
 
 #     end
