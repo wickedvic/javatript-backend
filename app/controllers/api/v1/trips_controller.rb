@@ -5,7 +5,10 @@ class Api::V1::TripsController < ApplicationController
         render json: trip
     end
 
-
+    def index
+        trips = Trip.all 
+        render json: trips 
+    end 
 
 
 end

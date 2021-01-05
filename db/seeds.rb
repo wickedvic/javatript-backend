@@ -12,24 +12,24 @@ Trip.destroy_all
 User.destroy_all
 
 puts "🍝 Seeding Users..."
-10.times do
+2.times do
   user = User.create!(
     name: Faker::Food.dish,
     username: Faker::Artist.name
   )
 
 
-  5.times do
+  2.times do
     trip = Trip.create!(
       location: Faker::Food.ingredient,
       date: Faker::Food.measurement,
       user: user
     )
  
-  5.times do
+  2.times do
     Post.create!(
       caption: Faker::Food.ingredient,
-      img_url: "https://hips.hearstapps.com/esq.h-cdn.co/assets/15/06/nrm_1423255129-pasta.jpg?resize=480:*",
+      img_url: Faker::Avatar.image,
       like: 0,
       trip: trip
     )
