@@ -37,6 +37,8 @@ ActiveRecord::Schema.define(version: 2021_01_06_162814) do
   create_table "trips", force: :cascade do |t|
     t.string "location"
     t.string "date"
+    t.float "latitude"
+    t.float "longitude"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

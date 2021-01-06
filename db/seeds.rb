@@ -10,6 +10,7 @@ Post.destroy_all
 # puts "🗑 Deleting old Trips..."
 Trip.destroy_all
 User.destroy_all
+Comment.destroy_all
 
 
 user1 = User.create!(name: 'Adam', username: 'adam1')
@@ -23,8 +24,8 @@ user2 = User.create!(name: 'Vivek', username: 'vik')
 #     username: Faker::Artist.name
 #   )
 
-trip1 = Trip.create!(location: "London", date: "11/12", user: user1)
-trip2 = Trip.create!(location: "New York", date: "9/15", user: user1)
+trip1 = Trip.create!(location: "London", date: "11/12", user: user1, latitude: 51.509865, longitude: -0.118092)
+trip2 = Trip.create!(location: "New York", date: "9/15", user: user1, latitude: 40.785091, longitude: -73.968285)
 
 #   2.times do
 #     trip = Trip.create!(

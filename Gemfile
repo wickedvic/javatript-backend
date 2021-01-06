@@ -44,3 +44,6 @@ gem "active_model_serializers", "~> 0.10.12"
 
 gem "faker", "~> 2.15"
 gem "bootstrap_form", "~> 4.0"
+
+
+gem 'geocoder', '~> 1.3', '>= 1.3.7'
