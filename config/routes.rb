@@ -6,6 +6,7 @@ namespace :api do
   resources :trips
   resources :users
   resources :posts
+  resources :comments 
 
 
     end

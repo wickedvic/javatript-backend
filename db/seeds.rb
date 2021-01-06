@@ -39,6 +39,10 @@ post2 = Post.create!(caption: "So many rats", img_url: "https://upload.wikimedia
 post3 = Post.create!(caption: 'Big Smoke', img_url: 'https://cdn.londonandpartners.com/visit/general-london/areas/river/76709-640x360-houses-of-parliament-and-london-eye-on-thames-from-above-640.jpg', like: 0, trip: trip1)
 post4 = Post.create!(caption: "Big Apple", img_url: "https://untappedcities.com/wp-content/uploads/2017/11/Staten-Island-Ferry-NYC_3.jpg", like: 0, trip: trip2)
 
+
+comment1 = Comment.create(username: 'adam1', content: "this is a comment", post: post1)
+comment2 = Comment.create(username: 'adam1', content: "this is a second comment", post: post1)
+
 #   2.times do
 #     Post.create!(
 #       caption: Faker::Food.ingredient,
