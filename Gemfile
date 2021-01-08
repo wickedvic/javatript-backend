@@ -47,3 +47,5 @@ gem "bootstrap_form", "~> 4.0"
 
 
 gem 'geocoder', '~> 1.3', '>= 1.3.7'
+
+gem 'rmagick'
