@@ -1,5 +1,7 @@
 # README
 
+Front End Repo: https://github.com/wickedvic/javatript-frontend
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
